@@ -12,6 +12,25 @@ iNotes is built using a variety of technologies to ensure a seamless and secure 
   
 - **Backend:** The backend is powered by Node.js and Express.js, with MongoDB serving as the database for storing, updating, and deleting your notes.
   
+## Database Structure
+
+**User Data:**
+
+- Each user has the following attributes:
+  - Username (String, required, unique)
+  - Email (String, required, unique)
+  - Password (String, required)
+
+**Note Data:**
+
+- Each note has the following attributes:
+  - Title (String, required)
+  - Content (String, required)
+  - Date (Date, automatically generated, defaults to the current date and time)
+  - User ID (String, required, to associate notes with users)
+  - Name (String, required)
+
+These structures describe how user and note data is organized within the MongoDB database. User data includes details about each user, and note data includes information about the notes, such as their title, content, creation date, and their association with a user using their User ID.
 
 ## Quick Start
 
@@ -66,6 +85,5 @@ Get started with iNotes by following these simple steps:
   $ cd frontend/
   $ npm start
   ```
-  
 
-Now you're all set to start using iNotes. Enjoy keeping your notes organized and accessible in style, with a design inspired by Apple's elegance and simplicity.
+Now you're all set to start using iNotes. Enjoy keeping your notes organized and accessible in style, with a design inspired by Apple's elegance and simplicity. Please leave a star if you liked the project. Thank you!
