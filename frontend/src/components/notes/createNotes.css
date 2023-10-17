@@ -1,0 +1,78 @@
+section {
+  background-color: #111;
+  height: 100vh;
+  display: flex;
+  justify-content: center; /* Horizontal centering */
+  align-items: center; /* Vertical centering */
+}
+
+.create-note {
+  max-width: 500px;
+  width: 100%;
+  background: #333; /* Dark background color */
+  padding: 20px; /* Adjust the padding as needed */
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a subtle box shadow */
+}
+
+
+.create-note h2 {
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin: 10px 0;
+  color: #fff; /* White text color */
+}
+
+.create-note .row {
+  width: 100%;
+  margin: 10px 0;
+}
+
+.create-note input,
+.create-note button {
+  width: 100%;
+  height: 40px;
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  background: #444; /* Darker background for input fields and buttons */
+  color: #fff; /* White text color */
+}
+
+.create-note label {
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: #fff; /* White text color */
+}
+
+.create-note textarea {
+  width: 100%;
+  resize: none;
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  background: #444; /* Darker background for textarea */
+  color: #fff; /* White text color */
+}
+
+.create-note button {
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 2px;
+  background: #0078e3; /* Apple-like blue color */
+  color: #fff; /* White text color */
+}
+
+.create-note button:hover {
+  background: #e806c6; /* A different color on hover */
+}
+
+@media (max-width: 500px) {
+  .create-note {
+    padding: 15px;
+    border: 5px solid #ccc;
+    box-shadow: none; /* Remove the box shadow on smaller screens */
+  }
+}

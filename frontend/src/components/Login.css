@@ -1,0 +1,92 @@
+.login-page {
+  height: 100vh;
+  width: 100%;
+  font-family: sans-serif;
+  background: #111; /* Dark background color */
+  background: -webkit-linear-gradient(to right, #000, #222); /* Linear gradient for the background */
+  background: linear-gradient(to right, #000, #222);
+}
+
+.login-signup {
+  display: flex;
+  justify-content: center; /* Center align the content */
+  align-items: center; /* Vertically center the content */
+  font-weight: 400;
+}
+
+.outer {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  text-align: left;
+  margin-top: 10rem;
+  margin-right: 5rem;
+}
+
+
+.inner {
+  width: 450px; /* Adjust the max-width as needed */
+  margin: auto;
+  background: #333; /* Dark background color */
+  box-shadow: 0 14px 80px rgba(34, 35, 58, 0.2);
+  padding: 40px 55px 45px 55px;
+  border-radius: 15px;
+  transition: all 0.3s;
+  color: #fff; /* Light text color */
+}
+
+.inner input {
+  resize: none;
+  padding: 5px;
+  border: none;
+  background: #444; /* Darker background for textarea */
+  color: #fff; /* White text color */
+}
+
+
+.form-group {
+  margin: 10px;
+}
+
+.outer .form-control:focus {
+  border-color: #167bff;
+  box-shadow: none;
+}
+
+.outer h3 {
+  text-align: center;
+  margin: 0;
+  line-height: 1;
+  padding-bottom: 20px;
+}
+
+.outer h4 {
+  text-transform: capitalize;
+  margin-top: 15px;
+}
+
+.custom-control-label {
+  font-weight: 400;
+  color: #fff; /* Light text color */
+}
+
+.btn {
+  margin-top: 10px;
+}
+
+.next_page, .next_page span {
+  text-align: right;
+  font-size: 15px;
+  padding-top: 10px;
+  color: #7f7d7d; /* Light text color */
+  margin: 5px;
+}
+
+.next_page span {
+  color: #167bff;
+}
+
+.next_page span:hover {
+  color: #61a2f7;
+  cursor: pointer;
+}

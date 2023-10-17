@@ -1,0 +1,76 @@
+/* Resetting some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: #fff; /* White color */
+  text-decoration: none; /* Remove underlines from links */
+}
+
+/* Navigation bar container */
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px; /* Adjust the height as needed */
+  background: #000; /* Apple often uses a black background */
+  color: #fff; /* Text color */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* A subtle box shadow */
+}
+
+/* Logo styles */
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo h2 {
+  font-size: 2rem; /* Adjust the font size as needed */
+  font-weight: 600; /* Adjust the font weight as needed */
+  color: #fff; /* Text color */
+  margin-right: 20px; /* Adjust the margin as needed */
+}
+
+/* Menu styles */
+.menu {
+  list-style: none;
+  display: flex;
+}
+
+.menu_item {
+  padding: 10px 20px; /* Adjust padding as needed */
+  font-size: 18px; /* Adjust font size as needed */
+  cursor: pointer;
+  color: #fff; /* Text color */
+  transition: 0.3s; /* Slightly faster transition */
+}
+
+/* Apply a subtle hover effect */
+.menu_item:hover {
+  background: rgba(255, 255, 255, 0.2); /* Background color on hover */
+  border-radius: 5px; /* Add rounded corners */
+  transition: 0.3s;
+}
+
+/* Button styles */
+.button {
+  padding: 10px 20px; /* Adjust padding as needed */
+  font-size: 18px; /* Adjust font size as needed */
+  cursor: pointer;
+  background: #0078e3; /* Apple-like blue color */
+  color: #fff; /* White text color */
+  border: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 600;
+  transition: 0.3s;
+
+  /* Apply a subtle hover effect */
+  &:hover {
+    background: #e806c6; /* A different color on hover */
+  }
+}
